@@ -98,6 +98,11 @@ a {
   gap: 40px;
 }
 
+.header__logo-container{
+  align-items: center;
+  display: flex;
+}
+
 .header__nav {
   display: flex;
   flex-grow: 1;
@@ -129,4 +134,22 @@ a {
 .header__contact-icon {
   fill: var(--color-primary-brands);
   background-color: transparent;
+}
+
+.header__logo-icon {
+  fill: var(--color-primary-brands);
+  background-color: transparent;
+}
+
+
+.header__logo-text{
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.25;
+  color: var(--color-primary-brands);
+}
+
+.header__logo-text-bold{
+   font-weight:700;
+  font-size: 32px;
 }
