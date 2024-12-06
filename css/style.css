@@ -88,23 +88,45 @@ a {
 
 /*header*/
 
+.header {
+  padding-top: 32px;
+}
+
 .header__container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 40px;
 }
 
 .header__nav {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-grow: 1;
-  gap: 115px;
+  gap: 40px;
+  align-items: center;
 }
 
 .header__menu {
   display: flex;
-  align-items: center;
+  gap: 48px;
   flex-grow: 1;
-  gap: 40px;
+  justify-content: center;
+}
+
+.header__contact-button {
+  padding: 16px 32px;
+  border-radius: 8px;
+  background-color: var(--color-primary-brands);
+  color: var(--color-secondary-text);
+  border: none;
+}
+
+.header__contact {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.header__contact-icon {
+  fill: var(--color-primary-brands);
+  background-color: transparent;
 }
