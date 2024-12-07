@@ -39,6 +39,7 @@
   --color-primary-brands: #ff9f0e;
   --color-secondary-text: #f1f3ff;
   --color-secondary-subtext: #839aa9;
+  --color-secondary-button: #fcb62a;
 }
 
 /* General */
@@ -98,11 +99,6 @@ a {
   gap: 40px;
 }
 
-.header__logo-container{
-  align-items: center;
-  display: flex;
-}
-
 .header__nav {
   display: flex;
   flex-grow: 1;
@@ -121,8 +117,13 @@ a {
   padding: 16px 32px;
   border-radius: 8px;
   background-color: var(--color-primary-brands);
-  color: var(--color-secondary-text);
+  color: var(--color-primary-light);
   border: none;
+  cursor: pointer;
+}
+
+.header__contact-button:hover {
+  background-color: var(--color-secondary-button);
 }
 
 .header__contact {
@@ -141,15 +142,57 @@ a {
   background-color: transparent;
 }
 
-
-.header__logo-text{
+.header__logo-text {
   font-weight: 400;
   font-size: 24px;
   line-height: 1.25;
   color: var(--color-primary-brands);
 }
 
-.header__logo-text-bold{
-   font-weight:700;
+.header__logo-text-bold {
+  font-weight: 700;
   font-size: 32px;
+}
+
+.header__link {
+  font-size: 18px;
+  color: var(--color-primary-dark);
+  cursor: pointer;
+}
+
+.header__link:hover {
+  color: var(--color-primary-brands);
+}
+
+/*Hero*/
+
+.hero__section {
+  padding-top: 212px;
+}
+
+.hero__title {
+  font-family: 'Rowdies';
+  font-weight: 400;
+  font-size: 72px;
+  width: 635px;
+  line-height: 1.25;
+  margin-bottom: 40px;
+}
+
+.hero__text {
+  width: 500px;
+  margin-bottom: 24px;
+}
+
+.hero__button {
+  padding: 16px 32px;
+  border-radius: 8px;
+  background-color: var(--color-primary-brands);
+  color: var(--color-primary-light);
+  border: none;
+  cursor: pointer;
+}
+
+.hero__button:hover {
+  background-color: var(--color-secondary-button);
 }
