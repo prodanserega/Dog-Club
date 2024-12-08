@@ -196,3 +196,43 @@ a {
 .hero__button:hover {
   background-color: var(--color-secondary-button);
 }
+
+/*Less-talk*/
+
+.Less-talk__section {
+  padding-top: 391px;
+}
+
+.Less-talk__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.Less-talk__container-text {
+  flex-wrap: 50%;
+}
+
+.Less-talk__title {
+  width: 428px;
+  margin-bottom: 40px;
+}
+
+.Less-talk__text {
+  width: 640px;
+  margin-bottom: 24px;
+}
+
+.Less-talk__button {
+  padding: 16px 32px;
+  border-radius: 8px;
+  background-color: var(--color-primary-brands);
+  color: var(--color-primary-light);
+  border: none;
+  cursor: pointer;
+}
+
+.Less-talk__button:hover {
+  background-color: var(--color-secondary-button);
+}
