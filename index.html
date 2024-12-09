@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dog-Club</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -64,45 +68,111 @@
           </div>
         </div>
       </section>
-      <section>
-        <h2>Services category</h2>
-        <ul>
-          <li>
-            <article>
-              <svg class="" width="96" height="96">
+      <section class="category__section">
+        <div class="container">
+          <h2 class="category__title">Services category</h2>
+          <div class="category__container">
+            <ul class="category__list">
+              <li>
+                <article class="category__card">
+                  <svg class="" width="96" height="96">
+                    <use href="./img/symbol-defs.svg#icon-Grooming"></use>
+                  </svg>
+                  <p class="category__text">Grooming</p>
+                </article>
+              </li>
+              <li>
+                <article class="category__card">
+                  <svg class="" width="96" height="96">
+                    <use href="./img/symbol-defs.svg#icon-Nutrition"></use>
+                  </svg>
+                  <p class="category__text">Nutrition</p>
+                </article>
+              </li>
+              <li>
+                <article class="category__card">
+                  <svg class="" width="96" height="96">
+                    <use href="./img/symbol-defs.svg#icon-Training"></use>
+                  </svg>
+                  <p class="category__text">Training</p>
+                </article>
+              </li>
+              <li>
+                <article class="category__card">
+                  <svg class="" width="96" height="96">
+                    <use href="./img/symbol-defs.svg#icon-Bathing"></use>
+                  </svg>
+                  <p class="category__text">Bathing</p>
+                </article>
+              </li>
+            </ul>
+            <div class="category__more">
+              <a class="category__link" href="">more services</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="customers__section">
+        <div class="container">
+          <h2 class="customers__title">Happy customer</h2>
+          <div class="customers__slider">
+            <button class="customers__button carousel-button prev">
+              <svg class="carousel-arraw" width="16px" height="16px">
                 <use href=""></use>
               </svg>
-              <p>Grooming</p>
-            </article>
-          </li>
-          <li>
-            <article>
-              <svg class="" width="96" height="96">
-                <use href=""></use>
-              </svg>
-              <p>Nutrition</p>
-            </article>
-          </li>
-          <li>
-            <article>
-              <svg class="" width="96" height="96">
-                <use href=""></use>
-              </svg>
-              <p>Nutrition</p>
-            </article>
-          </li>
-          <li>
-            <article>
-              <svg class="" width="96" height="96">
-                <use href=""></use>
-              </svg>
-              <p>Bathing</p>
-            </article>
-          </li>
-        </ul>
-        <button>more services</button>
+            </button>
+            <div class="customers__container swiper-container">
+              <ul class="customers__list swiper-wrapper">
+                <li class="swiper-slider">
+                  <article class="customer-card">
+                    <img class="customer-card__img" src="./img/Christin & Tom.jpg" alt="Christin & Tom" />
+                    <div class="customer-card__container">
+                      <div class="customer-card__container-text">
+                        <h3 class="customer-card__title">Christin & Tom</h3>
+                        <p class="customer-card__text">
+                          Love the overall workout experience!
+                        </p>
+                      </div>
+                      <div></div>
+                    </div>
+                  </article>
+                </li>
+                <li class="swiper-slider">
+                  <article class="customer-card">
+                    <img class="customer-card__img" src="./img/Anna & Tobby.jpg" alt="Anna & Tobby" />
+                    <div class="customer-card__container">
+                      <div class="customer-card__container-text">
+                        <h3 class="customer-card__title">Anna & Tobby</h3>
+                        <p class="customer-card__text">
+                          Amazing Products & Delivery on time.
+                        </p>
+                      </div>
+                      <div></div>
+                    </div>
+                  </article>
+                </li>
+                <li class="swiper-slider">
+                  <article class="customer-card">
+                    <img class="customer-card__img" src="./img/Sindy & Kitch.jpg" alt="Sindy & Kitch" />
+                    <div class="customer-card__container">
+                      <div class="customer-card__container-text">
+                        <h3 class="customer-card__title">Sindy & Kitch</h3>
+                        <p class="customer-card__text">
+                          Great job with the trainer!
+                        </p>
+                      </div>
+                      <div></div>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/slider.js"></script>
   </body>
 </html>
