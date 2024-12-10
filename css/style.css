@@ -352,3 +352,57 @@ a {
   font-size: 16px;
   color: var(--color-primary-light);
 }
+
+/*pagination*/
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.pagination__button {
+  width: 12px;
+  height: 12px;
+  background-color: var(--color-secondary-subtext);
+  border-radius: 50%;
+  padding: 0;
+}
+
+.pagination__button--action {
+  background-color: var(--color-primary-brands);
+}
+
+/*carousel*/
+
+.carousel-button {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border-radius: 50px;
+  background-color: transparent;
+  border: 1px solid var(--color-secondary-subtext);
+  cursor: pointer;
+}
+
+.carousel-arraw {
+  fill: var(--color-primary-light);
+  background-color: var(--color-secondary-subtext);
+}
+
+.carousel-button:hover {
+  background-color: var(--color-primary-brands);
+}
+
+.carousel-button:hover .carousel-arraw {
+  fill: var(--color-primary-light);
+}
+
+.carousel-button.prev {
+  transform: rotate(180deg);
+}
