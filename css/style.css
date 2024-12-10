@@ -317,6 +317,10 @@ a {
   justify-content: center;
 }
 
+.customers__button {
+  display: flex;
+}
+
 .customer-card {
   position: relative;
   width: 360px;
@@ -385,14 +389,13 @@ a {
   height: 44px;
   padding: 0;
   border-radius: 50px;
-  background-color: transparent;
+  background-color: var(--color-secondary-subtext);
   border: 1px solid var(--color-secondary-subtext);
   cursor: pointer;
 }
 
 .carousel-arraw {
   fill: var(--color-primary-light);
-  background-color: var(--color-secondary-subtext);
 }
 
 .carousel-button:hover {
